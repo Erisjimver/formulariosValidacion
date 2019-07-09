@@ -33,7 +33,7 @@ h1{
 
 </style>
 <script src="Jquery/jquery-1.6.3.min.js"></script>
-<script src="Jquery/jquery.validate.min.js"></script>
+<script src="Jquery/jquery.validate.js"></script>
 
 
 
@@ -61,16 +61,16 @@ h1{
     <tr>
       <td>Nombre:</td>
       <td><label for="nombre"></label>
-        <input type="text" name="nombre" id="nombre" class="required"></td>
+        <input type="text" name="nombre" id="nombre" ></td>
     </tr>
     <tr>
       <td>Apellidos:</td>
-      <td><input type="text" name="apellido" id="apellido" ></td>
+      <td><input type="text" name="apellido" id="apellido" class="required" title="Obligatorio"></td>
     </tr>
     <tr>
       <td>Fecha Nacimiento</td>
       <td><label for="f_nacimiento"></label>
-        <input type="text" name="f_nacimiento" id="f_nacimiento"  ></td>
+        <input type="text" name="f_nacimiento" id="f_nacimiento"  class="date"></td>
     </tr>
     <tr>
       <td>Edad:</td>
