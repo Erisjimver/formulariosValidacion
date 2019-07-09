@@ -42,11 +42,15 @@ h1{
 	$(document).ready(function() {
 		
 		
-			
-	
-	
-	
-	
+			$("#form_datos").validate({
+
+				rules:{
+
+					nombre:"required"
+
+				}
+
+			});
 		
 		
 	});
@@ -65,12 +69,12 @@ h1{
     </tr>
     <tr>
       <td>Apellidos:</td>
-      <td><input type="text" name="apellido" id="apellido" class="required" title="Obligatorio"></td>
+      <td><input type="text" name="apellido" id="apellido" ></td>
     </tr>
     <tr>
       <td>Fecha Nacimiento</td>
       <td><label for="f_nacimiento"></label>
-        <input type="text" name="f_nacimiento" id="f_nacimiento"  class="date"></td>
+        <input type="text" name="f_nacimiento" id="f_nacimiento" ></td>
     </tr>
     <tr>
       <td>Edad:</td>
@@ -84,7 +88,7 @@ h1{
     <tr>
       <td>Email:</td>
       <td><label for="mail"></label>
-        <input type="text" name="mail" id="mail"></td>
+        <input type="text" name="mail" id="mail" ></td>
     </tr>
     <tr>
       <td>Página web:</td>
